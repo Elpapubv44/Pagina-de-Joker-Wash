@@ -1,3 +1,7 @@
+import laundryImg from '../assets/images/venue_laundry_lounge_1790632957554.jpg';
+import casinoImg from '../assets/images/venue_casino_floor_1790632969644.jpg';
+import skybarImg from '../assets/images/venue_skybar_lounge_1790632980222.jpg';
+
 export type VenueId = 'laundry' | 'casino' | 'skybar';
 
 export interface VenueSlide {
@@ -77,7 +81,7 @@ export const VENUE_SLIDES: VenueSlide[] = [
       'Estación de lavado industrial de alta eficiencia con dosificación automática por ultrasonido, cabinas de secado rápido y espera conectada con servicio de cafetería y coctelería.',
     accentHex: '#3fd8e8',
     accentName: 'cyan',
-    imageUrl: '/src/assets/images/venue_laundry_lounge_1790632957554.jpg',
+    imageUrl: laundryImg,
     primaryStats: ['24 máquinas activas', '12 ciclos en curso'],
     secondaryMetrics: [
       { label: 'Tiempo medio restante', value: '18 min', detail: 'Rotación ágil' },
@@ -101,7 +105,7 @@ export const VENUE_SLIDES: VenueSlide[] = [
       'Sala de juego nocturna con mesas de Ruleta Americana, Blackjack VIP, Poker Texas Hold’em y terminales progresivas interconectadas en tiempo real.',
     accentHex: '#f2c14e',
     accentName: 'gold',
-    imageUrl: '/src/assets/images/venue_casino_floor_1790632969644.jpg',
+    imageUrl: casinoImg,
     primaryStats: ['8 mesas abiertas', 'Jackpot: $1.240.000'],
     secondaryMetrics: [
       { label: 'Terminales Slots', value: '64 / 70', detail: '91% en sesión' },
@@ -125,7 +129,7 @@ export const VENUE_SLIDES: VenueSlide[] = [
       'Lounge de coctelería de autor y cava climatizada para habanos con sistema de extracción laminar de triple filtrado e inyección de aire puro renovado cada 3 minutos.',
     accentHex: '#a88cff',
     accentName: 'violet',
-    imageUrl: '/src/assets/images/venue_skybar_lounge_1790632980222.jpg',
+    imageUrl: skybarImg,
     primaryStats: ['Sky Bar abierto', 'Ventilación 100%'],
     secondaryMetrics: [
       { label: 'Renovación de aire', value: '18 ACH', detail: 'Filtro HEPA + Carbón' },
