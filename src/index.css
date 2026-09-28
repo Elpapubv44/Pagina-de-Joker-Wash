@@ -1,0 +1,87 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --bg-primary: #0a0910;
+    --bg-surface: rgba(20, 18, 30, 0.68);
+    --accent-red: #e0203c;
+    --accent-gold: #f2c14e;
+    --accent-cyan: #3fd8e8;
+    --accent-violet: #a88cff;
+  }
+
+  body {
+    background-color: #0a0910;
+    color: #f4f3f8;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-display {
+    font-family: 'Bebas Neue', sans-serif;
+    letter-spacing: 0.04em;
+  }
+
+  .font-mono-tabular {
+    font-family: 'JetBrains Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+}
+
+@keyframes fadeInDashboard {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-dashboard-entry {
+  animation: fadeInDashboard 0.55s cubic-bezier(0.16, 1, 0.3, 1) forwards;
+}
+
+/* Glassmorphism Panel */
+.glass-panel {
+  background: rgba(19, 17, 29, 0.72);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  transition: transform 180ms cubic-bezier(0.16, 1, 0.3, 1),
+              border-color 180ms cubic-bezier(0.16, 1, 0.3, 1),
+              box-shadow 180ms cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.glass-panel:hover {
+  transform: translateY(-3px);
+}
+
+.glass-panel-red:hover {
+  border-color: rgba(224, 32, 60, 0.45);
+  box-shadow: 0 12px 32px -8px rgba(224, 32, 60, 0.18);
+}
+
+.glass-panel-cyan:hover {
+  border-color: rgba(63, 216, 232, 0.45);
+  box-shadow: 0 12px 32px -8px rgba(63, 216, 232, 0.18);
+}
+
+.glass-panel-gold:hover {
+  border-color: rgba(242, 193, 78, 0.45);
+  box-shadow: 0 12px 32px -8px rgba(242, 193, 78, 0.18);
+}
+
+.glass-panel-violet:hover {
+  border-color: rgba(168, 140, 255, 0.45);
+  box-shadow: 0 12px 32px -8px rgba(168, 140, 255, 0.18);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .animate-dashboard-entry,
+  .glass-panel {
+    animation: none !important;
+    transition: none !important;
+  }
+}

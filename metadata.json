@@ -1,0 +1,6 @@
+{
+  "name": "Joker Wash & Play — Command Dashboard",
+  "description": "Dashboard operativo oscuro para el complejo Joker Wash & Play: monitoreo en tiempo real de Lavandería, Casino y Sky Bar & Sala de Fumadores.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
